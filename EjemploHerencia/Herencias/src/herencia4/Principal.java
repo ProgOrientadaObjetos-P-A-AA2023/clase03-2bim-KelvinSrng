@@ -24,26 +24,34 @@ public class Principal {
         Docente doc2 = new Docente("Luis", "Alvarez", 38, 1000); 
         Policia pol2 = new Policia("ALEX", "Medina", 33, "Cabo");
         
-        ArrayList<Docente> listaDocentes = new ArrayList<>();
-        listaDocentes.add(doc1);
+        ArrayList<Docente> listaDocentes = new ArrayList<>(); 
+        listaDocentes.add(doc1); // Se agrega los datos a la lista docentes
         listaDocentes.add(doc2);
         
         ArrayList<Estudiante> listaEstudiantes = new ArrayList<>();
         // agregar elementos
+        listaEstudiantes.add(est1);
+        listaEstudiantes.add(est2);
         
         
         ArrayList<Policia> listaPolicias = new ArrayList<>();
         // agregar elementos
+        listaPolicias.add(pol1);
+        listaPolicias.add(pol2);
         
         
-        ReporteDocente rd = new ReporteDocente("0001Doc");
+        ReporteDocente rd = new ReporteDocente("0001Doc" , listaDocentes);
         
-        ReporteEstudiante re = new ReporteEstudiante("0001Est");
+        ReporteEstudiante re = new ReporteEstudiante("0001Est", listaEstudiantes);
         
-        ReportePolicia rp = new ReportePolicia("0001Pol");
+        ReportePolicia rp = new ReportePolicia("0001Pol", listaPolicias);
         
+        // Se calcua el promedio de sueldos
+        rd.calcularPromedioSueldos();
         System.out.println(rd);
+        re.calcularPromedioMatriculas();
         System.out.println(re);
+        rp.calcularPromedioEdades();
         System.out.println(rp);
         
     }

@@ -42,5 +42,11 @@ public class EstudianteDistancia extends Estudiante {
     public double obtenerCostoAsignatura(){
         return costoAsignatura;
     }
+    
+    
+    public String toString(){
+        String cadena = "";
         
+        return cadena;
+    }    
 }

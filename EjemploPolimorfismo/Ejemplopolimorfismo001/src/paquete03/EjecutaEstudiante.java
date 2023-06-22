@@ -32,7 +32,7 @@ public class EjecutaEstudiante {
             // Se imprime mensaje en pantalla para solicitar
             // el tipo de estudiante que se desea ingresar
             System.out.println("Tipo de Estudiante a ingresar\n"
-                    + "Ingrese (1) para Estudiante Presencial"
+                    + "Ingrese (1) para Estudiante Presencial\n"
                     + "Ingrese (2) para Estudiante Distancia");
             // se captura el valor ingresado por el usuario en 
             // la variable tipoEstudiante
@@ -103,7 +103,7 @@ public class EjecutaEstudiante {
                     // Leer numeroAsigs, costoAsig
                     System.out.println("Ingrese el número de asignaturas");
                     numeroAsigs = entrada.nextInt();
-                    System.out.println("Ingrese el costo de cada cada asignatura");
+                    System.out.println("Ingrese el costo de cada asignatura");
                     costoAsig = entrada.nextDouble();
 
                     // se hace uso de los métodos establecer para asignar valores
@@ -125,6 +125,7 @@ public class EjecutaEstudiante {
                     // los valores que se necesite en pantalla
                     System.out.printf("Datos Estudiante Distancia\n"
                             + "Nombres: %s\n"
+                            
                             + "Apellidos: %s\n"
                             + "Identificación: %s\n"
                             + "Edad: %d\n"
